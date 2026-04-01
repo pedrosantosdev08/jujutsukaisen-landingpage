@@ -5,16 +5,18 @@
   display: flex;
   flex-direction: column;
   background-color: var(--card-bg);
-  width: 420px;
+  width: 100%;
+  max-width: 400px; 
+  margin: 0 auto;   
   border-radius: 12px;
   overflow: hidden;
   font-family: 'Inter', sans-serif;
-  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
 }
 
 .wizard-card:hover {
   transform: translateY(-5px);
-  box-shadow:  3px 3px 15px var(--accent-color), -3px -3px 15px var(--accent-color);
+  box-shadow: 3px 3px 15px var(--accent-color), -3px -3px 15px var(--accent-color);
 }
 
 .wizard-image-container {
@@ -59,7 +61,6 @@
   margin: 0;
 }
 
-
 .wizard-badge {
   display: flex;
   align-items: center;
@@ -68,7 +69,7 @@
   padding: 6px 14px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(380deg ,transparent, var(--accent-color));
+  background: linear-gradient(380deg, transparent, var(--accent-color));
 }
 
 .badge-dot {
@@ -85,7 +86,6 @@
   color: #fff;
 }
 
-/* Container de Stats em linha */
 .wizard-stats-container {
   display: flex;
   justify-content: space-between;
@@ -104,10 +104,8 @@
   font-size: 0.7rem;
   font-weight: 800;
   color: var(--text-muted);
-  
 }
 
-/* Progress Bar Minimalista */
 progress {
   appearance: none;
   -webkit-appearance: none;
@@ -121,11 +119,26 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background: linear-gradient(270deg,  var(--accent-color), transparent);
+  background: linear-gradient(270deg, var(--accent-color), transparent);
   border-radius: 2px;
 }
 
 progress::-moz-progress-bar {
   background: var(--accent-color);
   border-radius: 2px;
+}
+
+
+
+@media (max-width: 910px) {
+  .wizard-card {
+    max-width: 350px; 
+  }
+}
+
+@media (max-width: 538px) {
+  .wizard-card {
+    max-width: 100%; 
+    border-radius: 0; 
+  }
 }

@@ -18,13 +18,45 @@
   color: transparent;
   margin-bottom: 50px;
   text-align: center;
+  font-style: italic;
 }
 
 .wizards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  /* Alterado para 'auto-fill' e o 'min' para ser menor que o card */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
   gap: 30px;
   width: 100%;
-  max-width: 1400px;
-  justify-items: center;
+  max-width: 1300px;
+  justify-content: center; /* Centraliza o grupo de cards */
+  justify-items: center;   /* Centraliza o card dentro da sua célula */
+}
+
+@media (max-width: 910px) {
+  .wizards-title {
+    font-size: 2.5rem;
+  }
+
+  .wizards-grid {
+    /* Ajuste para telas médias */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 538px) {
+  .wizards-title {
+    font-size: 1.8rem;
+  }
+  
+  .wizards-grid {
+    /* No mobile, forçamos uma coluna única bem ajustada */
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .wizards-title {
+    font-size: 1.5rem;
+  }
 }

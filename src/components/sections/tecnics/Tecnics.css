@@ -1,0 +1,61 @@
+.tecnics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 110vh;
+  padding: 80px 20px;
+  background-color: #050505;
+}
+
+.tecnics-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #391862, #0c8db2, #346e86);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.tecnics-intro {
+  color: #818188;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.tecnics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+  gap: 30px;
+  width: 100%;
+  max-width: 1300px;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media (max-width: 910px) {
+  .tecnics-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 538px) {
+  .tecnics-container {
+    padding-top: 100px;
+  }
+  .tecnics-title {
+    font-size: 1.8rem;
+  }
+  .tecnics-grid {
+    grid-template-columns: 1fr;
+  }
+  .tecnics-card {
+    padding: 30px;
+  }
+}

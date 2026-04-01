@@ -1,0 +1,79 @@
+.tecnics-card {
+  --card-bg: #111212; /* Fundo escuro fixo para todos os cards */
+
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    380deg,
+    transparent,
+    color-mix(in srgb, var(--accent-color), transparent 85%),
+    transparent
+  );
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 40px;
+  gap: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tecnics-card:hover {
+  transform: translateY(-10px);
+  /* Aqui a mágica acontece: a borda "acende" com a cor da técnica */
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px -10px var(--accent-color);
+}
+
+.tecnic-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  /* Círculo e Ícone ganham a cor da técnica */
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tecnic-name {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.2rem;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.tecnic-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 4px;
+
+  border: 1px solid var(--accent-color);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.badge-text {
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tecnic-description {
+  color: #a0a0ab;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}

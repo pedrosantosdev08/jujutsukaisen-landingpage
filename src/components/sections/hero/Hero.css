@@ -8,7 +8,7 @@
 
 .hero-title {
   font-family: 'Permanent+Marker', cursive; 
-  font-size: 5rem;
+  font-size: 7rem;
   letter-spacing: 8px;
   color: #ffffff;
   text-transform: uppercase;
@@ -37,4 +37,68 @@
     max-width: 600px;
     text-align: center;
     margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 5rem;
+    letter-spacing: 6px;
+  }
+
+  .gradient-line {
+    width: 250px;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 910px) {
+  .hero-title {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+
+  .gradient-line {
+    width: 200px;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 538px){
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .gradient-line {
+    width: 150px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .gradient-line {
+    width: 100px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
 }

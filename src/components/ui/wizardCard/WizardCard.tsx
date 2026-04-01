@@ -1,4 +1,4 @@
-import "./WizardCard.css";
+import "./WizardCard.css"
 
 interface WizardCardProps {
   wizardImage: string;
@@ -24,7 +24,7 @@ export function WizardCard({
   } as React.CSSProperties;
 
   return (
-    <div className="wizard-card" style={cardStyle}>
+    <article className="wizard-card" style={cardStyle}>
       <div className="wizard-image-container">
         <img className="wizard-image" src={wizardImage} alt={wizardName} />
       </div>
@@ -57,6 +57,6 @@ export function WizardCard({
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
