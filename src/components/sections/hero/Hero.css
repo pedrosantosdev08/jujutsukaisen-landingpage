@@ -1,0 +1,40 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh + 10vh);
+}
+
+.hero-title {
+  font-family: 'Permanent+Marker', cursive; 
+  font-size: 5rem;
+  letter-spacing: 8px;
+  color: #ffffff;
+  text-transform: uppercase;
+  
+  
+  text-shadow: 
+    0 0 10px #391862,
+    0 0 20px #391862,
+    0 0 40px #391862,
+    0 0 80px #391862;
+    
+  animation: pulse 2s infinite alternate;
+}
+
+.gradient-line {
+  width: 300px;
+  height: 2px;
+  margin: 20px auto;
+  background: linear-gradient(90deg, transparent, #bc13fe, #4d00ff, transparent);
+}
+
+.hero-description {
+  font-family: "Rationale", sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}

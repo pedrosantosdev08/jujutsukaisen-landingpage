@@ -1,0 +1,75 @@
+import { WizardCard } from "../../ui/wizardCard/WizardCard";
+import "./Wizards.css";
+
+
+const WIZARDS_LIST = [
+  {
+    id: 1,
+    wizardImage: 'https://i.pinimg.com/736x/b5/e7/f8/b5e7f88b1b5ff8777840924f0e6e27e8.jpg',
+    wizardName: 'Yuji Itadori',
+    wizardLevel: 'Grau 1',
+    wizardDescription: 'O receptáculo de Sukuna e protagonista da série, conhecido por sua força física absurda.',
+    wizardTitle: 'Rei das Maldições',
+    themeColor: '#991B1C',
+    stats: { power: 90, speed: 90, technique: 90 }
+  },
+  {
+    id: 2,
+    wizardImage: 'https://i.pinimg.com/1200x/a4/50/bc/a450bcb4ad32e7f5b9e7db259b0bea61.jpg',
+    wizardName: 'Satoru Gojo',
+    wizardLevel: 'Grau Especial',
+    wizardDescription: 'O feiticeiro mais forte do mundo, detentor do Mugen e do Seis Olhos.',
+    wizardTitle: 'Energia Infinita',
+    themeColor: '#6A27D2',
+    stats: { power: 100, speed: 90, technique: 100 }
+  },
+  {
+    id: 3,
+    wizardImage: 'https://i.pinimg.com/1200x/22/c3/69/22c369e6893fa16f74a498e38cb9c66c.jpg',
+    wizardName: 'Ryomen Sukuna',
+    wizardLevel: 'Grau Especial (Rei das Maldições)',
+    wizardDescription: 'Uma maldição lendária de quatro braços que reside no corpo de Itadori.',
+    wizardTitle: 'Rei das Maldições',
+    themeColor: '#991B1C',
+    stats: { power: 100, speed: 90, technique: 100 }
+  },
+  {
+    id: 4,
+    wizardImage: 'https://wallpapers.com/images/hd/megumi-fushiguro-power-manifestation-anime-artwork-vl29gupg6wzfy2fd.jpg',
+    wizardName: 'Megumi Fushiguro',
+    wizardLevel: 'Grau 2',
+    wizardDescription: 'Um prodígio do clã Zenin que utiliza a técnica das Dez Sombras.',
+    wizardTitle: 'Técnica Divina',
+    themeColor: '#0891B2',
+    stats: { power: 90, speed: 90, technique: 90 }
+  },
+  {
+    id: 5,
+    wizardImage: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a44778ea-3457-40e0-8979-b7e3685d23d0/dfph3lh-2037d77d-a068-492a-9ddb-d628df9b6cec.png/v1/fill/w_1920,h_1070,q_80,strp/nobara_kugisaki_x_mobile_legends_8k_wallpaper_by_newjer53_dfph3lh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA3MCIsInBhdGgiOiIvZi9hNDQ3NzhlYS0zNDU3LTQwZTAtODk3OS1iN2UzNjg1ZDIzZDAvZGZwaDNsaC0yMDM3ZDc3ZC1hMDY4LTQ5MmEtOWRkYi1kNjI4ZGY5YjZjZWMucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.HxKXl4x1czO3-5emXyem0AKjSW7k3WdznnXKq_6Ow6g',
+    wizardName: 'Nobara Kugisaki',
+    wizardLevel: 'Grau 3',
+    wizardDescription: 'Uma feiticeira confiante que usa martelo, pregos e bonecos de palha.',
+    wizardTitle: 'Técnica de Voodoo',
+    themeColor: '#6A27D2',
+    stats: { power: 85, speed: 90, technique: 70 }
+  }
+];
+
+export function Wizards() {
+  return (
+    <section id="wizards" className="wizards-container">
+      <h2 className="wizards-title">
+        <i>FEITICEIROS</i>
+      </h2>
+      
+      <div className="wizards-grid">
+        {WIZARDS_LIST.map((wizard) => (
+          <WizardCard 
+            key={wizard.id} 
+            {...wizard}     
+          />
+        ))}
+      </div>
+    </section>
+  );
+}

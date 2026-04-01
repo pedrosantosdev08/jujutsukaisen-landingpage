@@ -1,0 +1,131 @@
+.wizard-card {
+  --card-bg: #0e0f0f;
+  --text-muted: #818188;
+  
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  width: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.8s ease;
+}
+
+.wizard-card:hover {
+  transform: translateY(-5px);
+  box-shadow:  3px 3px 15px var(--accent-color), -3px -3px 15px var(--accent-color);
+}
+
+.wizard-image-container {
+  width: 100%;
+  height: 220px;
+}
+
+.wizard-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wizard-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wizard-name {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wizard-level {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.wizard-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+.wizard-badge {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(380deg ,transparent, var(--accent-color));
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+.badge-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Container de Stats em linha */
+.wizard-stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  
+}
+
+/* Progress Bar Minimalista */
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #222;
+  border-radius: 2px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(270deg,  var(--accent-color), transparent);
+  border-radius: 2px;
+}
+
+progress::-moz-progress-bar {
+  background: var(--accent-color);
+  border-radius: 2px;
+}
