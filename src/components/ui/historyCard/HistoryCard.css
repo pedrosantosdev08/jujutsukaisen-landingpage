@@ -1,0 +1,39 @@
+.history-card {
+  padding-left: 50px;
+}
+
+.history-card-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.history-card-title:hover {
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 5px 15px var(--accent-color);
+}
+
+.history-card-story-arc {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 5px 0 20px 0;
+  font-size: 1.2rem;
+  color: #64716c;
+}
+
+.history-card-description {
+  font-size: 1.3rem;
+  color: #818188;
+  line-height: 1.5;
+  padding: 0 0 20px 0;
+}
+
+.history-image {
+    border-radius: 10px;
+    width: 100%;
+}

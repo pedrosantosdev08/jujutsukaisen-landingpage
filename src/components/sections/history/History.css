@@ -1,0 +1,40 @@
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #0a0a0b;
+}
+
+.history-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #882162, #83227b, #7d2495);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 30px;
+  text-align: center;
+  font-style: italic;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, #6e28d4, #911e3f, #6a424c, #217d98);
+}

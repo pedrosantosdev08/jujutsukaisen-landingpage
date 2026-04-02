@@ -1,6 +1,5 @@
 .tecnics-card {
-  --card-bg: #111212; /* Fundo escuro fixo para todos os cards */
-
+  --card-bg: #111212; 
   display: flex;
   flex-direction: column;
   background: linear-gradient(
@@ -24,7 +23,6 @@
 
 .tecnics-card:hover {
   transform: translateY(-10px);
-  /* Aqui a mágica acontece: a borda "acende" com a cor da técnica */
   border-color: var(--accent-color);
   box-shadow: 0 10px 30px -10px var(--accent-color);
 }
@@ -37,7 +35,7 @@
   justify-content: center;
   border-radius: 50%;
 
-  /* Círculo e Ícone ganham a cor da técnica */
+
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 
