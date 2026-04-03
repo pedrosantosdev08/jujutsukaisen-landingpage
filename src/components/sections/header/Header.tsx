@@ -4,7 +4,6 @@ import "./Header.css";
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  
   const closeMenu = () => setMenuOpen(false);
 
   return (
@@ -26,11 +25,6 @@ export function Header() {
           <li>
             <a className="nav-item" href="#history" onClick={closeMenu}>
               HISTÓRIA
-            </a>
-          </li>
-          <li>
-            <a className="nav-item" href="#gallery" onClick={closeMenu}>
-              GALERIA
             </a>
           </li>
         </ul>

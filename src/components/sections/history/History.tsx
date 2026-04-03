@@ -1,4 +1,5 @@
-import { HistoryCard } from "../../ui/historyCard/historyCard";
+
+import { HistoryCard } from "../../ui/historyCard/HistoryCard";
 import "./History.css";
 
 const historyData = [
@@ -33,7 +34,7 @@ const historyData = [
 
 export function History() {
   return (
-    <section className="history-container">
+    <section id="history" className="history-container">
       <h2 className="history-title">A Jornada</h2>
       <div className="history-content">
         <div className="vertical-line"></div>

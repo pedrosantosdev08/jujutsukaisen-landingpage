@@ -1,4 +1,4 @@
-import "./historyCard.css";
+import "./HistoryCard.css"
 
 interface HistoryCardProps {
   title: string;

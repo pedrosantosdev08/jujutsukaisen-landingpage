@@ -1,0 +1,140 @@
+
+.footer-container {
+  background-color: #0b0a0c;
+  border-top: 1px solid #1e1133;
+  padding: 80px 10% 40px;
+  display: grid;
+ 
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  font-family: 'Inter', sans-serif; 
+}
+
+
+.footer-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #6d28d8, #6425be);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+
+.footer-info p {
+  color: #818188;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0;
+}
+
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  color: #818188;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #6d28d8;
+  transform: translateX(6px);
+}
+
+
+.footer-socials p {
+  color: #818188;
+  margin-bottom: 20px;
+}
+
+.social-icons-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1.5px solid #2a2a2e;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon-link:hover {
+  background-color: #6d28d8;
+  border-color: #6d28d8;
+  box-shadow: 0 0 15px rgba(109, 40, 216, 0.5);
+  transform: translateY(-4px);
+}
+
+
+.footer-copyright {
+  grid-column: 1 / -1; 
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(30, 17, 51, 0.6);
+  color: #444444;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-copyright span {
+   background: linear-gradient(90deg, #882162, #83227b, #7d2495);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-info p {
+    margin: 0 auto;
+  }
+
+  .social-icons-list {
+    justify-content: center;
+  }
+
+  .footer-link:hover {
+    transform: scale(1.05); 
+  }
+}

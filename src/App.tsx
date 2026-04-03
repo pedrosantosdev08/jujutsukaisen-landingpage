@@ -1,3 +1,4 @@
+import { Footer } from "./components/sections/footer/Footer";
 import { Header } from "./components/sections/header/Header";
 import { Hero } from "./components/sections/hero/Hero";
 import { History } from "./components/sections/history/History";
@@ -9,9 +10,10 @@ function App() {
     <>
       <Header />
       <Hero />
+      <History/>
       <Wizards />
       <Tecnics/>
-      <History/>
+      <Footer/>
     </>
   );
 }
