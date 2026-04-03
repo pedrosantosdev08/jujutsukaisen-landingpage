@@ -14,7 +14,7 @@
 }
 
 .header-title {
-  background: linear-gradient(90deg, #2b6cbe, #0c8db2, #346e86);
+  background: var(--blue-gradient);
   transition: all 0.3s ease-in;
   -webkit-background-clip: text;
   background-clip: text;

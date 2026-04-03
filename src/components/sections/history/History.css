@@ -4,14 +4,14 @@
   align-items: center;
   min-height: 100vh;
   padding: 40px 20px;
-  background-color: #0a0a0b;
+  background-color: var(--background-lightdark);
 }
 
 .history-title {
   font-family: "Permanent Marker", cursive;
   font-size: 4rem;
   font-weight: bold;
-  background: linear-gradient(90deg, #882162, #83227b, #7d2495);
+  background: var(--purple-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

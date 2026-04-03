@@ -5,14 +5,14 @@
   justify-content: center;
   min-height: 110vh;
   padding: 80px 20px;
-  background-color: #050505;
+  background-color: var(--background-dark);
 }
 
 .tecnics-title {
   font-family: "Permanent Marker", cursive;
   font-size: 4rem;
   font-weight: bold;
-  background: linear-gradient(90deg, #391862, #0c8db2, #346e86);
+  background: var(--blue-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -23,7 +23,7 @@
 }
 
 .tecnics-intro {
-  color: #818188;
+  color: var(--text-color);
   margin-bottom: 50px;
   text-align: center;
   max-width: 600px;

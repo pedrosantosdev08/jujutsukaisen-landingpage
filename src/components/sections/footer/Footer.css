@@ -1,6 +1,6 @@
 
 .footer-container {
-  background-color: #0b0a0c;
+  background-color: var(--background-lightdark);
   border-top: 1px solid #1e1133;
   padding: 80px 10% 40px;
   display: grid;
@@ -17,7 +17,7 @@
   font-size: 1.5rem;
   margin-bottom: 25px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #6d28d8, #6425be);
+  background: var(--purple-gradient-dark);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -26,7 +26,7 @@
 
 
 .footer-info p {
-  color: #818188;
+  color: var(--text-color);
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 380px;
@@ -45,7 +45,7 @@
 }
 
 .footer-link {
-  color: #818188;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
@@ -59,7 +59,7 @@
 
 
 .footer-socials p {
-  color: #818188;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
@@ -86,8 +86,8 @@
 }
 
 .social-icon-link:hover {
-  background-color: #6d28d8;
-  border-color: #6d28d8;
+  background-color: var(--purple-color);
+  border-color: var(--purple-color);
   box-shadow: 0 0 15px rgba(109, 40, 216, 0.5);
   transform: translateY(-4px);
 }
@@ -105,7 +105,7 @@
 }
 
 .footer-copyright span {
-   background: linear-gradient(90deg, #882162, #83227b, #7d2495);
+   background: var(--purple-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

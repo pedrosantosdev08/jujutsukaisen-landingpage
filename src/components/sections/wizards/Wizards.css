@@ -4,14 +4,14 @@
   align-items: center;
   min-height: 100vh;
   padding: 40px 20px;
-  background-color: #050505;
+  background-color: var(--background-dark);
 }
 
 .wizards-title {
   font-family: "Permanent Marker", cursive;
   font-size: 4rem;
   font-weight: bold;
-  background: linear-gradient(90deg, #2b6cbe, #0c8db2, #346e86);
+  background: var(--blue-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -23,13 +23,12 @@
 
 .wizards-grid {
   display: grid;
-  /* Alterado para 'auto-fill' e o 'min' para ser menor que o card */
   grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
   gap: 30px;
   width: 100%;
   max-width: 1300px;
-  justify-content: center; /* Centraliza o grupo de cards */
-  justify-items: center;   /* Centraliza o card dentro da sua célula */
+  justify-content: center; 
+  justify-items: center;   
 }
 
 @media (max-width: 910px) {
@@ -38,7 +37,7 @@
   }
 
   .wizards-grid {
-    /* Ajuste para telas médias */
+    
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
   }
@@ -50,7 +49,7 @@
   }
   
   .wizards-grid {
-    /* No mobile, forçamos uma coluna única bem ajustada */
+    
     grid-template-columns: 1fr;
   }
 }
