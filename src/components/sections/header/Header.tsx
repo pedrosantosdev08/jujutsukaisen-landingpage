@@ -13,6 +13,11 @@ export function Header() {
       <nav>
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
+            <a className="nav-item" href="#history" onClick={closeMenu}>
+              HISTÓRIA
+            </a>
+          </li>
+          <li>
             <a className="nav-item" href="#wizards" onClick={closeMenu}>
               PERSONAGENS
             </a>
@@ -20,11 +25,6 @@ export function Header() {
           <li>
             <a className="nav-item" href="#tecnics" onClick={closeMenu}>
               TÉCNICAS
-            </a>
-          </li>
-          <li>
-            <a className="nav-item" href="#history" onClick={closeMenu}>
-              HISTÓRIA
             </a>
           </li>
         </ul>

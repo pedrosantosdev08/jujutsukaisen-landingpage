@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 100vh;
   padding: 40px 20px;
-  background-color: var(--background-lightdark);
+  background: var(--background-lightdark);
 }
 
 .history-title {

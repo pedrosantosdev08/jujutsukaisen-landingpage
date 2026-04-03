@@ -102,6 +102,66 @@ const WIZARDS_LIST: Wizard[] = [
       { name: "Grampo (Hairpin)", description: "Faz com que os pregos imbuídos de energia amaldiçoada explodam violentamente.", color: "#6A27D2" },
       { name: "Kanzashi", description: "Técnica de manipulação de pregos para controle de área e ataques perfurantes.", color: "#4c1d95" }
     ]
+  },
+  {
+    id: 6,
+    wizardImage: 'https://preview.redd.it/mahito-sukuna-all-the-way-v0-xveobl01lm9e1.jpeg?auto=webp&s=066eb2738d9f9d9cc2471311cb59f88221cfab4d',
+    wizardName: 'Mahito',
+    wizardLevel: 'Grau Especial (Maldição)',
+    wizardDescription: 'Uma maldição nascida do medo e ódio que os humanos sentem uns pelos outros. Sua habilidade de manipular a alma o torna extremamente perigoso.',
+    wizardTitle: 'Transfiguração Ociosa',
+    themeColor: '#7DD3FC',
+    stats: { power: 88, speed: 85, technique: 95 },
+    skills: [
+      { name: "Transfiguração Ociosa", description: "Permite remodelar a alma de si mesmo ou de outros, alterando a forma física instantaneamente.", color: "#7DD3FC" },
+      { name: "Auto-Incorporação de Perfeição", description: "Expansão de Domínio onde ele pode tocar a alma de qualquer um dentro do raio de alcance.", color: "#0c4a6e" },
+      { name: "Isomerismo Polimórfico", description: "Criação de humanos transfigurados que servem como lacaios em combate.", color: "#38bdf8" }
+    ]
+  },
+  {
+    id: 7,
+    wizardImage: 'https://uploads.alternativanerd.com.br/wp-content/uploads/2024/04/AN_Nanami-Jujutsu-Kaisen.webp',
+    wizardName: 'Kento Nanami',
+    wizardLevel: 'Grau 1',
+    wizardDescription: 'Um ex-trabalhador corporativo que retornou ao mundo do jujutsu. Conhecido por seu pragmatismo e técnica de precisão matemática.',
+    wizardTitle: 'Feiticeiro Assalariado',
+    themeColor: '#EAB308',
+    stats: { power: 85, speed: 80, technique: 92 },
+    skills: [
+      { name: "Técnica de Proporção 7:3", description: "Divide o alvo em dez partes e cria um ponto fraco no ponto 7:3, garantindo um golpe crítico.", color: "#EAB308" },
+      { name: "Colapso", description: "Imbuir energia em destroços de objetos destruídos para causar dano em área massivo.", color: "#854d0e" },
+      { name: "Horas Extras", description: "Um pacto vinculante que aumenta sua energia amaldiçoada quando o turno de trabalho regular termina.", color: "#451a03" }
+    ]
+  },
+  {
+    id: 8,
+    wizardName: 'Suguru Geto',
+    wizardImage: 'https://i.pinimg.com/736x/f1/7f/ff/f17fff775f9849c21efc0168dab7534e.jpg',
+    wizardLevel: 'Grau Especial',
+    wizardDescription: 'Um dos quatro feiticeiros de Grau Especial. Sua ideologia extremista o levou a buscar um mundo habitado apenas por feiticeiros.',
+    wizardTitle: 'Manipulador de Maldições',
+    themeColor: '#166534',
+    stats: { power: 95, speed: 88, technique: 98 },
+    skills: [
+      { name: "Manipulação de Maldições", description: "Capacidade de absorver maldições derrotadas e utilizá-las como servos sob seu comando.", color: "#166534" },
+      { name: "Uzumaki", description: "Combina milhares de maldições em um único ataque de energia concentrada e devastadora.", color: "#14532d" },
+      { name: "Combate com Nuvens Brinccalhonas", description: "Mestria em armas amaldiçoadas e artes marciais para complementar seu exército de maldições.", color: "#064e3b" }
+    ]
+  },
+  {
+    id: 9,
+    wizardImage: 'https://i.pinimg.com/736x/36/81/92/3681920c620ded78225c789c86fcf076.jpg',
+    wizardName: 'Mahoraga',
+    wizardLevel: 'Grau Especial (Shikigami)',
+    wizardDescription: 'A carta na manga do clã Zenin. Este Shikigami nunca foi domado na história até a era moderna, sendo o ápice da adaptação.',
+    wizardTitle: 'Espada do Extermínio',
+    themeColor: '#475569',
+    stats: { power: 100, speed: 85, technique: 100 },
+    skills: [
+      { name: "Adaptação Universal", description: "A roda em suas costas gira para se adaptar a qualquer fenômeno ou ataque sofrido.", color: "#475569" },
+      { name: "Espada do Extermínio", description: "Uma lâmina revestida de energia positiva que é letal para qualquer espírito amaldiçoado.", color: "#cbd5e1" },
+      { name: "Força Transcendente", description: "Poder físico bruto capaz de rivalizar com os feiticeiros de Grau Especial mais fortes.", color: "#1e293b" }
+    ]
   }
 ];
 
@@ -113,7 +173,7 @@ export function Wizards() {
   return (
     <section id="wizards" className="wizards-container">
       <h2 className="wizards-title">
-        <i>FEITICEIROS</i>
+        <i>FEITICEIROS e maldições</i>
       </h2>
       
       <div className="wizards-grid">
